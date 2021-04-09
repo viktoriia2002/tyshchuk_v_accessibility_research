@@ -1,0 +1,5 @@
+Reference:
+https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Multimedia
+https://github.com/mdn/learning-area/tree/master/accessibility/multimedia/audio-transcript-ui
+https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
+https://github.com/iandevlin/iandevlin.github.io/tree/master/mdn/video-player-with-captions

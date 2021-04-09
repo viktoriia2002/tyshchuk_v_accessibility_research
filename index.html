@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Basic custom controls</title>
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+
+  <!-- movie section -->
+  <section class="player1">
+    <video id="video-1">
+      <source src="video/stranger_things.mp4" type="video/mp4">
+        <track class="subtitlesText" kind="subtitles" src="video/stranger_things.vtt" srclang="en" default>
+      <p>Your browser doesn't support HTML5 video. Here is a <a href="stranger_things.mp4">link to the video</a> instead.</p>
+    </video>
+
+    <div class="controls1">
+      <button class="playpause1">Play</button>
+      <button class="stop1">Stop</button>
+      <button class="rwd1">Rwd</button>
+      <button class="fwd1">Fwd</button>
+      <button class="fsc1">Fsc</button>
+      <button class="volume-btn">
+        <input class="volume1" type="range" min="0" max="100">
+    </button>
+    <button class="subtitles1" data-state="subtitles">Sbt</button>
+      <div class="time1">00:00</div>
+
+    </div>
+  </section>
+    
+<!-- cartoon section-->
+  <section class="player">
+    <video>
+      <source src="video/coco.mp4" type="video/mp4">
+        <track class="subtitlesText" kind="subtitles" src="video/coco.vtt" srclang="en" default>
+      <p>Your browser doesn't support HTML5 video. Here is a <a href="coco.mp4">link to the video</a> instead.</p>
+    </video>
+
+    <div class="controls">
+      <button class="playpause">Play</button>
+      <button class="stop">Stop</button>
+      <button class="rwd">Rwd</button>
+      <button class="fwd">Fwd</button>
+      <button class="fsc">Fsc</button>
+      <button class="volume-btn">
+        <input class="volume" type="range" min="0" max="100">
+    </button>
+    <button class="subtitles" data-state="subtitles">Sbt</button>
+      <div class="time">00:00</div>
+    </div>
+  </section>
+
+  <!-- audio section -->
+
+  <section class="player2">
+    <audio>
+      <source src="audio/arctic_monkeys.mp3" type="audio/mp3">
+      <source src="audio/arctic_monkeys.ogg" type="audio/ogg">
+      <p>Your browser doesn't support HTML5 audio. Here is a <a href="audio/arctic_monkeys.mp3">link to the audio</a> instead.</p>
+    </audio>
+
+    <div class="controls2">
+      <button class="playpause2">Play</button>
+      <button class="stop2">Stop</button>
+      <button class="rwd2">Rwd</button>
+      <button class="fwd2">Fwd</button>
+      <button class="volume-btn">
+        <input class="volume2" type="range" min="0" max="100">
+    </button>
+      <div class="time2">00:00</div>
+    </div>
+  </section>
+  <div class="transcript-container">
+    <div class="transcript-control">
+      <button>Show transcript</button>
+    </div>
+    <section class="transcript">
+      <p><strong>Person1</strong>: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at convallis libero, ut ultricies massa. Integer vel tempor nisi. Nunc scelerisque enim est. Duis lorem ipsum, semper vitae sem at, ultricies interdum ex.</p>
+
+      <p><strong>Person 2</strong>: In consectetur maximus blandit. Curabitur convallis iaculis quam, eu porta erat suscipit sit amet. Morbi viverra placerat ipsum, non bibendum libero egestas eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed quis condimentum ante. Nullam ullamcorper faucibus eros. Quisque egestas non risus a faucibus. Curabitur luctus tincidunt turpis in scelerisque.</p>
+
+      <p><strong>Person 1</strong>: Suspendisse sapien ipsum, lacinia eu bibendum in, congue eu purus. Sed fringilla sollicitudin faucibus. Cras sodales sapien neque, eget gravida augue lobortis ac. Mauris blandit faucibus porta.</p>
+
+      <p><strong>Person 2</strong>: Fusce non libero eget nisl porta egestas ut sed elit. Nullam molestie lectus ut elementum sagittis. Donec dictum nunc leo, quis gravida diam varius non. Nam ac nisl vel nibh iaculis convallis vel eget arcu. Mauris pharetra purus ac ornare pellentesque. Fusce in leo nunc. Nunc eget vehicula sem, quis aliquam lorem.</p>
+
+      <p><strong>Person 3</strong>: Ut auctor ornare pulvinar. Morbi nisl ipsum, pellentesque et bibendum eget, vestibulum in massa. Cras egestas cursus est sed ultrices. Etiam vel dui felis.</p>
+    </section>
+
+  </div>
+
+  <script src="js/main.js"></script>
+  </body>
+</html>
