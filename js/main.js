@@ -32,17 +32,17 @@ volume.onclick = function () {
 playPauseBtn.onclick = function() {
     if(player.paused) {
       player.play();
-      playPauseBtn.textContent = 'Pause';
+      playPauseBtn.textContent = 'pause';
     } else {
       player.pause();
-      playPauseBtn.textContent = 'Play';
+      playPauseBtn.textContent = 'play';
     }
   };
 
   stopBtn.onclick = function() {
     player.pause();
     player.currentTime = 0;
-    playPauseBtn.textContent = 'Play';
+    playPauseBtn.textContent = 'play';
   };
 
   rwdBtn.onclick = function() {
@@ -54,7 +54,7 @@ playPauseBtn.onclick = function() {
     if(player.currentTime >= player.duration || player.paused) {
       player.pause();
       player.currentTime = 0;
-      playPauseBtn.textContent = 'Play';
+      playPauseBtn.textContent = 'play';
     }
   };
 
@@ -119,17 +119,17 @@ volume1.onclick = function () {
 playPauseBtn1.onclick = function() {
     if(player1.paused) {
       player1.play();
-      playPauseBtn1.textContent = 'Pause';
+      playPauseBtn1.textContent = 'pause';
     } else {
       player1.pause();
-      playPauseBtn1.textContent = 'Play';
+      playPauseBtn1.textContent = 'play';
     }
   };
 
   stopBtn1.onclick = function() {
     player1.pause();
     player1.currentTime = 0;
-    playPauseBtn1.textContent = 'Play';
+    playPauseBtn1.textContent = 'play';
   };
 
   rwdBtn1.onclick = function() {
@@ -141,7 +141,7 @@ playPauseBtn1.onclick = function() {
     if(player1.currentTime >= player1.duration || player1.paused) {
       player1.pause();
       player1.currentTime = 0;
-      playPauseBtn1.textContent1 = 'Play';
+      playPauseBtn1.textContent1 = 'play';
     }
   };
 
@@ -187,17 +187,17 @@ volume2.onclick = function () {
 playPauseBtn2.onclick = function() {
   if(player2.paused) {
     player2.play();
-    playPauseBtn2.textContent = 'Pause';
+    playPauseBtn2.textContent = 'pause';
   } else {
     player2.pause();
-    playPauseBtn2.textContent = 'Play';
+    playPauseBtn2.textContent = 'play';
   }
 };
 
 stopBtn2.onclick = function() {
   player2.pause();
   player2.currentTime = 0;
-  playPauseBtn2.textContent = 'Play';
+  playPauseBtn2.textContent = 'play';
 };
 
 rwdBtn2.onclick = function() {
@@ -209,7 +209,7 @@ fwdBtn2.onclick = function() {
   if(player2.currentTime >= player2.duration || player2.paused) {
     player2.pause();
     player2.currentTime = 0;
-    playPauseBtn2.textContent = 'Play';
+    playPauseBtn2.textContent = 'play';
   }
 };
 
@@ -241,12 +241,12 @@ const transcript = document.querySelector('.transcript');
 const transcriptBtn = document.querySelector('.transcript-container button');
 
 transcriptBtn.onclick = function() {
-  if(transcriptBtn.textContent === 'Show transcript') {
+  if(transcriptBtn.textContent === 'Lyrics') {
     transcript.style.height = '150px';
-    transcriptBtn.textContent = 'Hide transcript';
+    transcriptBtn.textContent = 'Hide';
   } else {
     transcript.style.height = '0';
-    transcriptBtn.textContent = 'Show transcript';
+    transcriptBtn.textContent = 'Lyrics';
   }
 };
 

@@ -3,14 +3,20 @@
   }
   
   html {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body{
+  background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
   }
   
   /* video */
   .player {
-    width: 480px;
+    width: 800px;
     margin: 10px auto;
-    border: 1px solid #ccc;
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
   
   video, audio, .controls {
@@ -18,7 +24,12 @@
   }
   
   .controls {
+    margin-top: 10px;
     height: 36px;
+    background-color: white;
+    border-radius: 13px;
+    background-color: #f6ebe6;
+  
   }
   
   button {
@@ -31,13 +42,10 @@
     cursor: pointer;
   }
   
-  button:hover, button:focus {
-    background-color: #ddd;
+  .subtitles{
+    margin-left: 300px;
   }
   
-  button:active {
-    background-color: #ccc;
-  }
   
   .controls div {
     font-size: 12px;
@@ -49,22 +57,31 @@
   
   video {
     margin-bottom: -5px;
+    border-radius: 90px;
   }
 
   /* tv */
 
   .player1 {
-    width: 480px;
+    width: 800px;
     margin: 10px auto;
-    border: 1px solid #ccc;
+    border: 0;
+    margin-bottom: 30px;
   }
   
-  video, audio, .controls1 {
+  video, audio {
     width: 100%;
+    border-radius: 100px;
   }
   
   .controls1 {
+    margin-top: 10px;
     height: 36px;
+    background-color: white;
+    border-radius: 13px;
+    margin-bottom: 40px;
+    background-color: #f6ebe6;
+   
   }
   
   button {
@@ -76,14 +93,10 @@
     width: 50px;
     cursor: pointer;
   }
-  
-  button:hover, button:focus {
-    background-color: #ddd;
+  .subtitles1{
+    margin-left: 300px;
   }
   
-  button:active {
-    background-color: #ccc;
-  }
   
   .controls1 div {
     font-size: 12px;
@@ -101,9 +114,10 @@
 /* audio */
 
   .player2 {
-    width: 480px;
+    width: 700px;
     margin: 10px auto;
-    border: 1px solid #ccc;
+    
+    border-radius: 13px;
   }
   
   video, audio, .controls2 {
@@ -112,6 +126,9 @@
   
   .controls2 {
     height: 36px;
+    background-color: #f6ebe6;
+    
+    border-radius: 13px;
   }
   
   button {
@@ -120,30 +137,32 @@
     border: 0;
     margin-right: 2px;
     height: 100%;
-    width: 50px;
+    width: 60px;
     cursor: pointer;
-  }
-  
-  button:hover, button:focus {
-    background-color: #ddd;
-  }
-  
-  button:active {
-    background-color: #ccc;
+    background-color: rgb(30,154,254,0);
+    
   }
   
   .controls2 div {
-    font-size: 12px;
+    font-size: 13px;
     display: inline-block;
     line-height: 36px;
-    width: 45px;
+    width: 90px;
     float: right;
+    margin-bottom: 30px;
   }
 
+.title2{
+  margin-left: -50px
+}
+
   .transcript-container {
-    width: 480px;
+    width: 500px;
     margin: 10px auto;
-    border: 1px solid #ccc;
+    background-color: #aee1f9;
+    background-image: linear-gradient(315deg, #aee1f9 0%, #f6ebe6 74%);
+    border-radius: 15px;
+
     min-height: 38px;
   }
 
